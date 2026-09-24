@@ -1,0 +1,419 @@
+/* Configuração geral */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: #e30613;
+
+    padding: 20px 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 40px;
+}
+
+.titulo {
+    text-align: right;
+
+    color: white;
+}
+
+.titulo h2 {
+    margin: 0;
+}
+
+.titulo p {
+    margin: 5px 0 0 0;
+}
+
+
+/* Conteúdo principal */
+
+main {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+
+/* Introdução */
+
+.introducao {
+    background-color: white;
+
+    padding: 30px;
+
+    border: 1px solid #ddd;
+
+    margin-bottom: 30px;
+
+    border-radius: 8px;
+}
+
+.introducao h2 {
+    margin-top: 0;
+
+    color: #e30613;
+}
+
+.introducao p {
+    line-height: 1.6;
+}
+
+
+/* Demonstração do Box Model */
+
+.explicacao {
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 40px;
+}
+
+
+/*
+    Aqui temos exemplos de:
+
+    CONTENT
+    PADDING
+    BORDER
+    MARGIN
+*/
+
+.box {
+
+    /* CONTENT */
+    width: 180px;
+    height: 80px;
+
+    /* PADDING */
+    padding: 20px;
+
+    /* BORDER */
+    border: 3px solid #333;
+
+    /* MARGIN */
+    margin: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+
+.content {
+    background-color: #ffcdd2;
+}
+
+.padding {
+    background-color: #fff9c4;
+}
+
+.border {
+    background-color: #c8e6c9;
+}
+
+.margin {
+    background-color: #bbdefb;
+}
+
+
+/* Título */
+
+.subtitulo {
+    text-align: center;
+
+    color: #333;
+
+    margin-bottom: 30px;
+}
+
+
+/* Container principal */
+
+.container {
+
+    /*
+        PROPRIEDADES FLEXBOX
+    */
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    flex-flow: row wrap;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    align-content: center;
+
+    gap: 15px;
+
+    row-gap: 20px;
+
+    column-gap: 15px;
+}
+
+
+/* Cards */
+
+.item {
+
+    /*
+        BOX MODEL
+    */
+
+
+    /* CONTENT */
+
+    width: 220px;
+
+    min-height: 220px;
+
+
+    /* PADDING */
+
+    padding: 20px;
+
+
+    /* BORDER */
+
+    border: 2px solid #ddd;
+
+
+    /* MARGIN */
+
+    margin: 5px;
+
+
+    background-color: white;
+
+    border-radius: 8px;
+
+
+    /*
+        FLEXBOX
+    */
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    flex-grow: 0;
+
+    flex-shrink: 1;
+
+    flex-basis: 220px;
+
+    align-self: auto;
+
+
+    transition: 0.3s;
+}
+
+
+/* Efeito simples */
+
+.item:hover {
+    transform: translateY(-5px);
+
+    border-color: #e30613;
+
+    box-shadow: 0 5px 15px #cccccc;
+}
+
+
+/* Número do elemento */
+
+.item span {
+    background-color: #e30613;
+
+    color: white;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+/* Título dos cards */
+
+.item h3 {
+    margin-bottom: 5px;
+
+    color: #333;
+}
+
+
+/* Texto */
+
+.item p {
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    color: #666;
+}
+
+
+/* Código */
+
+.item code {
+    background-color: #eeeeee;
+
+    padding: 8px;
+
+    border-left: 4px solid #e30613;
+
+    width: 100%;
+
+    font-size: 12px;
+}
+
+
+/*
+    Exemplos extras das propriedades
+    utilizadas no Flexbox
+*/
+
+.item:nth-child(1) {
+    order: 0;
+}
+
+.item:nth-child(2) {
+    order: 0;
+}
+
+.item:nth-child(3) {
+    order: 0;
+}
+
+.item:nth-child(4) {
+    flex-grow: 0;
+}
+
+.item:nth-child(5) {
+    flex-shrink: 1;
+}
+
+.item:nth-child(6) {
+    flex-basis: 220px;
+}
+
+.item:nth-child(7) {
+    align-self: auto;
+}
+
+.item:nth-child(8) {
+    flex: 0 1 220px;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 10px;
+    }
+
+
+    .titulo {
+        text-align: center;
+    }
+
+
+    .container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .item {
+        width: 90%;
+
+        flex-basis: auto;
+    }
+
+
+    .explicacao {
+        flex-direction: column;
+    }
+
+}

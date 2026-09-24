@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atividade 01 - Flexbox</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="atividade02.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>SENAI</h1>
+        </div>
+
+        <div class="titulo">
+            <h2>Atividade 01</h2>
+            <p>Box Model e Flexbox</p>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="introducao">
+
+            <h2>Estudando Flexbox</h2>
+
+            <p>
+                Nesta atividade foram utilizados conceitos de Box Model,
+                como Content, Padding, Border e Margin, além das propriedades
+                do Flexbox para organizar os elementos da página.
+            </p>
+
+        </section>
+
+
+        <section class="explicacao">
+
+            <div class="box content">
+                Content
+            </div>
+
+            <div class="box padding">
+                Padding
+            </div>
+
+            <div class="box border">
+                Border
+            </div>
+
+            <div class="box margin">
+                Margin
+            </div>
+
+        </section>
+
+
+        <h2 class="subtitulo">
+            Exemplos de Flexbox
+        </h2>
+
+
+        <section class="container">
+
+            <div class="item">
+                <span>01</span>
+
+                <h3>Display</h3>
+
+                <p>
+                    Define o elemento como um container flexível.
+                </p>
+
+                <code>display: flex;</code>
+            </div>
+
+
+            <div class="item">
+
+                <span>02</span>
+
+                <h3>Flex Direction</h3>
+
+                <p>
+                    Define a direção dos elementos.
+                </p>
+
+                <code>flex-direction: row;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>03</span>
+
+                <h3>Flex Wrap</h3>
+
+                <p>
+                    Permite quebrar os elementos para outra linha.
+                </p>
+
+                <code>flex-wrap: wrap;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>04</span>
+
+                <h3>Justify Content</h3>
+
+                <p>
+                    Alinha os elementos horizontalmente.
+                </p>
+
+                <code>justify-content: center;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>05</span>
+
+                <h3>Align Items</h3>
+
+                <p>
+                    Realiza o alinhamento dos itens.
+                </p>
+
+                <code>align-items: center;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>06</span>
+
+                <h3>Align Content</h3>
+
+                <p>
+                    Controla o alinhamento das linhas.
+                </p>
+
+                <code>align-content: center;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>07</span>
+
+                <h3>Gap</h3>
+
+                <p>
+                    Cria um espaço entre os elementos.
+                </p>
+
+                <code>gap: 20px;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>08</span>
+
+                <h3>Row Gap</h3>
+
+                <p>
+                    Cria espaço entre as linhas.
+                </p>
+
+                <code>row-gap: 20px;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>09</span>
+
+                <h3>Column Gap</h3>
+
+                <p>
+                    Cria espaço entre as colunas.
+                </p>
+
+                <code>column-gap: 20px;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>10</span>
+
+                <h3>Order</h3>
+
+                <p>
+                    Pode alterar a ordem de um item.
+                </p>
+
+                <code>order: 1;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>11</span>
+
+                <h3>Flex Grow</h3>
+
+                <p>
+                    Define quanto um item pode crescer.
+                </p>
+
+                <code>flex-grow: 1;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>12</span>
+
+                <h3>Flex Shrink</h3>
+
+                <p>
+                    Define quanto um item pode diminuir.
+                </p>
+
+                <code>flex-shrink: 1;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>13</span>
+
+                <h3>Flex Basis</h3>
+
+                <p>
+                    Define o tamanho inicial de um item.
+                </p>
+
+                <code>flex-basis: 200px;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>14</span>
+
+                <h3>Flex</h3>
+
+                <p>
+                    Junta algumas propriedades do Flexbox.
+                </p>
+
+                <code>flex: 1;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>15</span>
+
+                <h3>Align Self</h3>
+
+                <p>
+                    Alinha apenas um item específico.
+                </p>
+
+                <code>align-self: center;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>16</span>
+
+                <h3>Flex Flow</h3>
+
+                <p>
+                    Junta direction e wrap.
+                </p>
+
+                <code>flex-flow: row wrap;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>17</span>
+
+                <h3>Direction Column</h3>
+
+                <p>
+                    Organiza os elementos em coluna.
+                </p>
+
+                <code>flex-direction: column;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>18</span>
+
+                <h3>Space Between</h3>
+
+                <p>
+                    Cria espaço entre os elementos.
+                </p>
+
+                <code>justify-content: space-between;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>19</span>
+
+                <h3>Space Around</h3>
+
+                <p>
+                    Distribui espaço ao redor dos elementos.
+                </p>
+
+                <code>justify-content: space-around;</code>
+
+            </div>
+
+
+            <div class="item">
+
+                <span>20</span>
+
+                <h3>Flex End</h3>
+
+                <p>
+                    Posiciona os elementos no final.
+                </p>
+
+                <code>justify-content: flex-end;</code>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Atividade de Desenvolvimento Web - SENAI
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
